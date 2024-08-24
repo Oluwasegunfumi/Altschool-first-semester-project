@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 2em 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 1em;
+        }
+        h1, h2 {
+            font-size: 2em;
+            text-align: center;
+        }
+        .bio, .media, .contact {
+            margin: 1em 0;
+        }
+        .bio img, .media video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .media, .contact {
+            text-align: center;
+        }
+        .contact iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Page</h1>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section class="bio">
+            <h2>About Me</h2>
+            <picture>
+                <!-- Responsive images for different screen sizes -->
+                <source srcset="image/display.jpg" media="(min-width: 1200px)">
+                <source srcset="image/display.jpg" media="(min-width: 768px)">
+                <source srcset="image/display.jpg" media="(max-width: 767px)">
+                <img src="image/display.jpg" alt="A portrait of me">
+            </picture>
+            <p>
+                My name is Ojo John Oluwasegun an Altschool student of Engineering with
+                focus in front-end Engineering, a dedicated and hardworking individual
+                with a passion for learning and helping others. I believe in the power of
+                teamwork and collaboration, always striving to actively listen, learn from
+                mentors, and contribute effectively to shared goals.</p>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media">
+            <h2>Multimedia Projects</h2>
+            <!-- Audio Element -->
+            <h3>Take control of your life</h3>
+            <audio controls>
+                <source src="audio/Take Control of Your Life - Motivational Audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <!-- Video Element -->
+            <h3>My Introduction Video</h3>
+            <video autoplay muted loop control>
+                <source src="video/horse1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <!-- Embedded Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.779165932785!2d-122.4015472846814!3d37.79183061613436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b262c5d1d%3A0xd0d565ec9b6c6e2!2sApple%20Park!5e0!3m2!1sen!2sus!4v1635855092605!5m2!1sen!2sus" allowfullscreen></iframe>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 . All rights reserved.</p>
+    </footer>
+</body>
+</html>
